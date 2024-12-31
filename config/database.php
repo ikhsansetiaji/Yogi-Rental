@@ -3,14 +3,14 @@
 
 // Definisi konstanta untuk koneksi database
 define('DB_HOST', 'localhost'); // Host database (default: localhost)
-define('DB_USER', 'root');      // Username database
-define('DB_PASS', '');          // Password database (kosong untuk default pada XAMPP)
-define('DB_NAME', 'rental_ps_db'); // Nama database
+define('DB_USER', 'admin');      // Username database
+define('DB_PASS', 'AdminPassword_69');          // Password database (kosong untuk default pada XAMPP)
+define('DB_NAME', 'rental'); // Nama database
 
 try {
     // Membuat koneksi menggunakan PDO
     $conn = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_NAME, DB_USER, DB_PASS);
-    
+
     // Set atribut PDO untuk mode error
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
